@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Project Case: Microsoft Looking to Explore Film"
-date:       2021-05-11 21:23:53 +0000
+date:       2021-05-11 17:23:53 -0400
 permalink:  project_case_microsoft_looking_to_explore_film
 ---
 
@@ -56,7 +56,7 @@ After I successfully cleaned the data, I started to analyze the data and perform
 
 #### Graph 4
 ![Image 4](https://raw.githubusercontent.com/justingrisanti/dsc-mod-1-project-v2-1-online-ds-sp-000/master/Visualizations/Movie%20Ratings.png)
-*This graph is a scatter plot that shows the relationship between film rating and profit generated. Points that are darker have more votes on imdb. *
+*This graph is a scatter plot that shows the relationship between film rating and profit generated. Points that are darker have more votes on imdb.*
 
 #### Graph 5
 ![Image 5](https://raw.githubusercontent.com/justingrisanti/dsc-mod-1-project-v2-1-online-ds-sp-000/master/Visualizations/Revenue%20Breakdown.png)
