@@ -65,11 +65,12 @@ After I successfully cleaned the data, I started to analyze the data and perform
 
 ### Step 5: Develop Conclusions
 
-##### Question 1 
+
+#### Question 1 
 
 From our three graphs related to question 1, we can determine the following: Walt Disney, Univision, and Fox generate the most profit, followed by Warner Bros and Sony. From personal knowledge, these film studios tend to produce action-adventure franchises, as well as family-comedy movies. According to my 'genres' graph, Action, Adventure, and Comedy generate the most profit overall, which could be explained by the type of movies that these studios make. From the 'directors' graph, we can see the directors that generated the most profit, as well. Seven out of the ten directors create action/adventure movies, and the other three create family/comedy movies. 
 
-##### Question 2
+#### Question 2
 
 When thinking about question 2, I wanted to see if profit was affected if a movie had poor ratings, or if higher ratings caused it to generate more profit. From my calculations, there was a .17 correlation coefficient between ratings and profit, which leads me to believe that movies can make profit even if they rate poorly. Looking at the graph, I see two things: 1. It seems that the best performing movies do tend to have higher ratings; 2. There seem to be an even distribution of movies that had a negative profit across good and bad ratings. 
 
