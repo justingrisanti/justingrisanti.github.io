@@ -43,7 +43,7 @@ From there, I cleaned the data from each table using python and various methods 
 After I successfully cleaned the data, I started to analyze the data and perform joins using SQL. For each of the questions developed in Step 1, I created visualizations that could help me understand what recommendations I should make to Microsoft. Below are the visualizations that I have created:
 
 #### Graph 1
-![Image 1](https://raw.githubusercontent.com/justingrisanti/dsc-mod-1-project-v2-1-online-ds-sp-000/master/Visualizations/Top%20Ten%20Movie%20Studios.png)
+![Image 1](https://raw.githubusercontent.com/justingrisanti/dsc-mod-1-project-v2-1-online-ds-sp-000/master/Visualizations/Top%20Ten%20Movie%20Studio.png)
 *This graph shows which movie studios were able to generate the most profit.*
 
 #### Graph 2
@@ -68,7 +68,7 @@ After I successfully cleaned the data, I started to analyze the data and perform
 
 #### Question 1 
 
-From our three graphs related to question 1, we can determine the following: Walt Disney, Univision, and Fox generate the most profit, followed by Warner Bros and Sony. From personal knowledge, these film studios tend to produce action-adventure franchises, as well as family-comedy movies. According to my 'genres' graph, Action, Adventure, and Comedy generate the most profit overall, which could be explained by the type of movies that these studios make. From the 'directors' graph, we can see the directors that generated the most profit, as well. Seven out of the ten directors create action/adventure movies, and the other three create family/comedy movies. 
+From our three graphs related to question 1, we can determine the following: Walt Disney, Universal Studios, and Fox generate the most profit, followed by Warner Bros and Sony. From personal knowledge, these film studios tend to produce action-adventure franchises, as well as family-comedy movies. According to my 'genres' graph, Action, Adventure, and Comedy generate the most profit overall, which could be explained by the type of movies that these studios make. From the 'directors' graph, we can see the directors that generated the most profit, as well. Seven out of the ten directors create action/adventure movies, and the other three create family/comedy movies. 
 
 #### Question 2
 
