@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Real-Estate Pricing Predictors"
-date:       2021-08-27 01:57:40 +0000
+date:       2021-08-26 21:57:40 -0400
 permalink:  real-estate_pricing_predictors
 ---
 
@@ -60,7 +60,7 @@ To further understand my data and the results, I generated the following statist
     * Waterfront View: $242,268
 
 
-    As you can see, houses that have a waterfront or are renovated increase the price of a house greatly. As these are binary variables, they are not incremental. For each increase in grade, the house price goes up by $88k.
+As you can see, houses that have a waterfront or are renovated increase the price of a house greatly. As these are binary variables, they are not incremental. For each increase in grade, the house price goes up by $88k.
 
 * Next, we check for normality to make sure our normality assumption is accurate. I generated a perfect fit line, as well as a Q-Q plot below.
 
@@ -68,7 +68,7 @@ To further understand my data and the results, I generated the following statist
 
 ![Image4](https://github.com/justingrisanti/dsc-phase-2-project/blob/main/Visualizations/Normality.png)
 
-    As you can see, the Q-Q plot is normal for most data, but trails off towards higher priced homes. Our line of fit seems to be linear, so no issues here, as well.
+As you can see, the Q-Q plot is normal for most data, but trails off towards higher priced homes. Our line of fit seems to be linear, so no issues here, as well.
 
 * Next, is our variance inflation factor, to see how interrelated our features are. As you can see below, a lot of our variables are interrelated. This is to be expected, because the features of houses can be very correlated, for example, the more bedrooms there are in the house, the higher the sqft_living should be. To solve this issue, I am hoping to get more data in the future that shows more diverse features.
 
@@ -86,6 +86,6 @@ To further understand my data and the results, I generated the following statist
 
 There doesn't seem to be that bad of a funnel shape, there seems to be issues as the prices get larger, but hopefully we can sample a larger set of data with pricier houses to get a more accurate model in the future.
 
-Next Steps
+### Next Steps
 
 Our confidence in these coefficients should be not that high, as there seem to be some issues with the model. I hope to retest this model in the future with more data surrounding pricier houses, different features, such as location or color of house. I believe this added data should make our model stronger.
