@@ -6,6 +6,9 @@ permalink:  real-estate_pricing_predictors
 ---
 
 
+*Disclaimer: This scenario is a case, all companies mentioned are based on fictional scenarios
+
+
 ## Step 1: Business Understanding
 
 The purpose of this section is to understand what the business problem and the stakeholders that will be 
