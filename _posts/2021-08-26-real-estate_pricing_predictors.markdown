@@ -28,7 +28,7 @@ In my data, I clean each column by checking for empty or missing data, remove ou
 
 The first step in my modeling is to create a heatmap to get the most correlated variables. As you can see below, those variables were grade and sqft_living.
 
-![Image1](https://github.com/justingrisanti/dsc-phase-2-project/blob/main/Visualizations/Homoscedasticity.png)
+![Image 1](https://raw.githubusercontent.com/justingrisanti/dsc-phase-2-project/master/Visualizations/heatmap.png)
 
 After removing highly variables for multicollinearity, I ran my baseline model. For both of my variables, I got a train score of .403 and a validation score of .400
 
@@ -44,7 +44,7 @@ The model that got me the best scores had all 7 variables listed above, with a t
 
 After generating my final r^2 statistic I got .5166.
 
-![Image2](https://github.com/justingrisanti/dsc-phase-2-project/blob/main/Visualizations/features.png)
+![Image 2](https://raw.githubusercontent.com/justingrisanti/dsc-phase-2-project/master/Visualizations/features.png)
 
 ## Step 5: Regression Results
 
@@ -67,9 +67,9 @@ As you can see, houses that have a waterfront or are renovated increase the pric
 
 * Next, we check for normality to make sure our normality assumption is accurate. I generated a perfect fit line, as well as a Q-Q plot below.
 
-![Image3](https://github.com/justingrisanti/dsc-phase-2-project/blob/main/Visualizations/Linearity.png)
-
-![Image4](https://github.com/justingrisanti/dsc-phase-2-project/blob/main/Visualizations/Normality.png)
+![Image 3](https://raw.githubusercontent.com/justingrisanti/dsc-phase-2-project/master/Visualizations/Linearity.png)
+  
+![Image 4](https://raw.githubusercontent.com/justingrisanti/dsc-phase-2-project/master/Visualizations/Normality.png)
 
 As you can see, the Q-Q plot is normal for most data, but trails off towards higher priced homes. Our line of fit seems to be linear, so no issues here, as well.
 
@@ -85,7 +85,7 @@ As you can see, the Q-Q plot is normal for most data, but trails off towards hig
 
 * Lastly, I check for homoscedasticity
 
-![Image5](https://github.com/justingrisanti/dsc-phase-2-project/blob/main/Visualizations/Homoscedasticity.png)
+![Image 5](https://raw.githubusercontent.com/justingrisanti/dsc-phase-2-project/master/Visualizations/Homoscedasticity.png)
 
 There doesn't seem to be that bad of a funnel shape, there seems to be issues as the prices get larger, but hopefully we can sample a larger set of data with pricier houses to get a more accurate model in the future.
 
