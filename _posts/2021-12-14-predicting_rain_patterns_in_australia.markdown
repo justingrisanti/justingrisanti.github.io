@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Predicting Rain Patterns in Australia"
-date:       2021-12-14 23:24:38 +0000
+date:       2021-12-14 18:24:39 -0500
 permalink:  predicting_rain_patterns_in_australia
 ---
 
