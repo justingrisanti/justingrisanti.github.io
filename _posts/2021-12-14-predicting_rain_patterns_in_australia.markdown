@@ -97,28 +97,28 @@ The logistic regression model was our best model, with a recall score of .77. Th
 
 Training Data Results:
 
-                                       precision   recall    f1-score   support
+               precision    recall  f1-score   support
 
-                   0.0                    0.79        0.80        0.79          82693
-                   1.0                    0.79        0.78        0.79          82693
+         0.0       0.79      0.80      0.79     82693
+         1.0       0.79      0.78      0.79     82693
 
-             accuracy                                                0.79       165386
-           macro avg             0.79        0.79        0.79       165386
-     weighted avg             0.79        0.79        0.79       165386
+    accuracy                           0.79    165386
+    macro avg       0.79      0.79      0.79    165386
+    weighted avg       0.79      0.79      0.79    165386
 
 
 Test Data Results:
  
-                                          precision    recall     f1-score    support
+                precision    recall  f1-score   support
 
-          0.0                              0.92         0.79        0.85         27623
-          1.0                              0.52         0.77        0.62            7926
+          0.0       0.92      0.79      0.85     27623
+          1.0       0.52      0.77      0.62      7926
 
-             accuracy                                                  0.79         35549
-           macro avg             0.72          0.78        0.74         35549
-     weighted avg             0.83          0.79        0.80         35549
+     accuracy                           0.79     35549
+    macro avg       0.72      0.78      0.74     35549
+    weighted avg       0.83      0.79      0.80     35549
 
-![Image6](https://github.com/justingrisanti/dsc-phase-3-project/blob/main/Visualizations/FinalCM.png)
+![Image6](https://raw.githubusercontent.com/justingrisanti/dsc-phase-3-project/main/Visualizations/FinalCM.png)
 
 Our AUC is .86
 
