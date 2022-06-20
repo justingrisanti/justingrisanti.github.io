@@ -12,6 +12,8 @@ Link to Presentation: https://github.com/justingrisanti/dsc-capstone-project/blo
 
 Link to Visualization: https://github.com/justingrisanti/dsc-capstone-project/tree/main/Visualizations
 
+Link to Data: https://www.dropbox.com/s/m8yqo6wucwzizzf/Data.zip?dl=0
+
 Link to Jupyter Notebook: https://github.com/justingrisanti/dsc-capstone-project/blob/main/Capstone%20Project-Recommendation%20System.ipynb
 
 
