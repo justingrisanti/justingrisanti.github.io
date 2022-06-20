@@ -16,6 +16,7 @@ Link to Data: https://www.dropbox.com/s/m8yqo6wucwzizzf/Data.zip?dl=0
 
 Link to Jupyter Notebook: https://github.com/justingrisanti/dsc-capstone-project/blob/main/Capstone%20Project-Recommendation%20System.ipynb
 
+Link to Blog Post: https://justingrisanti.github.io/spotify_recommendation_system
 
 ## Step 1: Business Understanding
 
@@ -35,32 +36,32 @@ The main purpose of this recommendation system is inferential, meaning that this
 
 We are sourcing our data using the Spotify Million Playlist Dataset, with the following metrics
 
-Number of playlists: *1,000,000*
-Number of tracks: *66,346,428*
-Number of unique tracks: *2,262,292*
-Number of unique albums: *734,684*
-Number of unique artists: *295,860*
-Number of unique titles: *92,944*
+* Number of playlists: *1,000,000*
+* Number of tracks: *66,346,428*
+* Number of unique tracks: *2,262,292*
+* Number of unique albums: *734,684*
+* Number of unique artists: *295,860*
+* Number of unique titles: *92,944*
 
 Our raw playlist data has the following features:
 
 >**Playlist Attributes**
->Playlist Name
->Playlist Type
->Number of Tracks
->Number of Unique Albums
->Number of Followers
->Number of Edits
->Duration in Milliseconds
->Number of Artists
+> * Playlist Name
+> * Playlist Type
+> * Number of Tracks
+> * Number of Unique Albums
+> * Number of Followers
+> * Number of Edits
+> * Duration in Milliseconds
+> * Number of Artists
 >**Song Attributes**
->Artist Name
->Track URI
->Artist URI
->Track Name
->Album URI
->Duration in Milliseconds
->Album Name
+> * Artist Name
+> * Track URI
+> * Artist URI
+> * Track Name
+> * Album URI
+> * Duration in Milliseconds
+> * Album Name
 
 As we see in the summary above, there are 1 million playlists with over 66 million songs. Within these playlists, there are 2.2 million unique songs, 734k unique albums, and 300k unique artists. There is a lot of data to work with here. The playlists are sorted into categories, with country and chill being the top, followed by rap and workout. Drake, Kanye West, and Kendrick Lamar are the 3 top artists. The next step in this process is to convert all of this json data to be compatible with python.
 
@@ -92,15 +93,15 @@ See below the three playlists selected for our reasonableness tests (102585, 765
 
 Thank you for inputting your playlist. Please see playlist tracks below:
 
-![Image1]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/playlistsnapshot102585.png
+![Image1](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/playlistsnapshot102585.png)
 
 Here are 5 tracks that might fit this playlist:
 
-![Image2]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/recommendations102585.png
+![Image2](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/recommendations102585.png)
 
-![Image3]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/PlaylistGenreBreakdown102585.png
+![Image3](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/PlaylistGenreBreakdown102585.png)
 
-![Image4]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/songvsplaylist102585.png
+![Image4](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/songvsplaylist102585.png)
 
 As we can see above, the sample variance between our recommended song and our playlist average seems to be very low, driven mainly by the genre data. While it can be argued that our genre data is so specific that it is dominating our model, I personally think the specificity of the genre helps us narrow our recommendations down to suggest more accurate songs.
 
@@ -118,15 +119,15 @@ Overall, I would deem that these 5 recommended songs pass the reasonableness tes
 
 Thank you for inputting your playlist. Please see playlist tracks below:
 
-![Image5]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/playlistsnapshot765.png
+![Image5](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/playlistsnapshot765.png)
 
-Here are 5 tracks that might fit this playlist:
+Here are 10 tracks that might fit this playlist:
 
-![Image6]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/recommendations765.png
+![Image6](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/recommendations765.png)
 
-![Image7]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/songvsplaylist765.png
+![Image7](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/songvsplaylist765.png)
 
-![Image8]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/PlaylistGenreBreakdown765.png
+![Image8](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/PlaylistGenreBreakdown765.png)
 
 As we can see above, the sample variance between our recommended song and our playlist average is very low, driven mainly by the genre data.
 
@@ -143,15 +144,15 @@ Overall, I would deem that these 10 recommended songs pass the reasonableness te
 
 Thank you for inputting your playlist. Please see playlist tracks below:
 
-![Image9]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/playlistsnapshot160101.png
+![Image9](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/playlistsnapshot160101.png)
 
 Here are 5 tracks that might fit this playlist:
 
-![Image10]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/recommendations160101.png
+![Image10](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/recommendations160101.png)
 
-![Image11]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/songvsplaylist160101.png
+![Image11](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/songvsplaylist160101.png)
 
-![Image12]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/PlaylistGenreBreakdown160101.png
+![Image12](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/PlaylistGenreBreakdown160101.png)
 
 
 As we can see above, the sample variance between our recommended song and our playlist average is very low, driven mainly by the genre data.
