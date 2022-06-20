@@ -1,22 +1,19 @@
 ---
 layout: post
 title:      "Spotify Recommendation System"
-date:       2022-06-17 19:23:58 +0000
+date:       2022-06-17 15:23:58 -0400
 permalink:  spotify_recommendation_system
 ---
 
 
 ## Preface:
 
-Link to Presentation: 
+Link to Presentation: https://github.com/justingrisanti/dsc-capstone-project/blob/main/Project%20Presentation.pdf
 
-Link to Data: 
+Link to Visualization: https://github.com/justingrisanti/dsc-capstone-project/tree/main/Visualizations
 
-Link to Visualization: 
+Link to Jupyter Notebook: https://github.com/justingrisanti/dsc-capstone-project/blob/main/Capstone%20Project-Recommendation%20System.ipynb
 
-Link to Jupyter Notebook: 
-
-Link to Blog Post:
 
 ## Step 1: Business Understanding
 
@@ -93,15 +90,15 @@ See below the three playlists selected for our reasonableness tests (102585, 765
 
 Thank you for inputting your playlist. Please see playlist tracks below:
 
-![Image1]
+![Image1]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/playlistsnapshot102585.png
 
 Here are 5 tracks that might fit this playlist:
 
-![Image2]
+![Image2]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/recommendations102585.png
 
-![Image3]
+![Image3]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/PlaylistGenreBreakdown102585.png
 
-![Image4]
+![Image4]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/songvsplaylist102585.png
 
 As we can see above, the sample variance between our recommended song and our playlist average seems to be very low, driven mainly by the genre data. While it can be argued that our genre data is so specific that it is dominating our model, I personally think the specificity of the genre helps us narrow our recommendations down to suggest more accurate songs.
 
@@ -119,15 +116,15 @@ Overall, I would deem that these 5 recommended songs pass the reasonableness tes
 
 Thank you for inputting your playlist. Please see playlist tracks below:
 
-![Image5]
+![Image5]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/playlistsnapshot765.png
 
 Here are 5 tracks that might fit this playlist:
 
-![Image6]
+![Image6]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/recommendations765.png
 
-![Image7]
+![Image7]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/songvsplaylist765.png
 
-![Image8]
+![Image8]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/PlaylistGenreBreakdown765.png
 
 As we can see above, the sample variance between our recommended song and our playlist average is very low, driven mainly by the genre data.
 
@@ -144,15 +141,15 @@ Overall, I would deem that these 10 recommended songs pass the reasonableness te
 
 Thank you for inputting your playlist. Please see playlist tracks below:
 
-![Image9]
+![Image9]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/playlistsnapshot160101.png
 
 Here are 5 tracks that might fit this playlist:
 
-![Image10]
+![Image10]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/recommendations160101.png
 
-![Image11]
+![Image11]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/songvsplaylist160101.png
 
-![Image12]
+![Image12]https://github.com/justingrisanti/dsc-capstone-project/blob/main/Visualizations/PlaylistGenreBreakdown160101.png
 
 
 As we can see above, the sample variance between our recommended song and our playlist average is very low, driven mainly by the genre data.
