@@ -8,28 +8,16 @@ permalink:  spotify_recommendation_system
 
 ## Preface:
 
-Link to Presentation: https://github.com/justingrisanti/dsc-capstone-project/blob/main/Project%20Presentation.pdf
-
-Link to Visualization: https://github.com/justingrisanti/dsc-capstone-project/tree/main/Visualizations
-
-Link to Data: https://www.dropbox.com/s/m8yqo6wucwzizzf/Data.zip?dl=0
-
-Link to Jupyter Notebook: https://github.com/justingrisanti/dsc-capstone-project/blob/main/Capstone%20Project-Recommendation%20System.ipynb
-
-Link to Blog Post: https://justingrisanti.github.io/spotify_recommendation_system
-
-## Step 1: Business Understanding
-
-The purpose of this section is to define the business problem and understand the stakeholders for the work that I am performing. Spotify is an audio streaming and media services platfrom, created in 2006. It is one of the largest music streaming service providers with over 406 million monthly active users, including 180 million paying subscribers, as of December 2021.
-
+Link to GitHub: https://github.com/justingrisanti/dsc-capstone-project
+# Business Understanding
+### Context:
+Spotify is an audio streaming and media services platfrom, created in 2006. It is one of the largest music streaming service providers with over 406 million monthly active users, including 180 million paying subscribers, as of December 2021.
 Spotify offers digital copyright restricted recorded music and podcasts, including more than 82 million songs, from record labels and media companies. As a freemium service, basic features are free with advertisements and limited control, while additional features, such as offline listening and commercial-free listening, are offered via paid subscriptions. Spotify is currently available in 180+ countries as of October 2021. Users can search for music based on artist, album, or genre, and can create, edit, and share playlists.
-
 Two of the most important aspects of Spotify that has led to its popularity are its music discovery functionalities, and playlist creation fostering a new social aspect to music listening. In a 2021 How-To Geek article called "6 Awesome Spotify Features You Should Be Using," 3 of the 6 features are related to playlists, and one speaks about music discovery. One of these features related to music discovery is called "Enhance." Enhance allows you to discover new tracks that might best fit one of your existing playlists. For example, if you have a playlist of a collection of 80s rock songs, Enhance might suggest that you add "Eye of the Tiger" by Survivor.
-
-What I aim to perform is to create a recommendation system from scratch that can reperform the functionality of Enhance, which is to obtain a selection of songs and use content-based filtering to suggest a list of songs that are similar.
-
+### Business Problem:
+Music is now one of the easiest forms of media to consume, due to smartphone technology allowing users to access millions of songs at their fingertips. However, with all of these choices, it is hard to know where to begin when it comes to finding new music that matches someone’s preferences, and users may become overwhelmed when trying to find music.
+The solution to this problem is to create a recommendation system from scratch that can reperform the functionality of Enhance, which is to use a selection of songs from a playlist and use content-based filtering to suggest a list of songs that are similar.
 The stakeholders of this project are Spotify, music-listeners, DJs, and other music-related occupations.
-
 The main purpose of this recommendation system is inferential, meaning that this model should be able infer information about songs from a given playlist and then to predict songs that a user will likely add to that same playlist.
 
 ## Step 2: Data Understanding
@@ -103,16 +91,16 @@ Here are 5 tracks that might fit this playlist:
 
 ![Image4](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/songvsplaylist102585.png)
 
-As we can see above, the sample variance between our recommended song and our playlist average seems to be very low, driven mainly by the genre data. While it can be argued that our genre data is so specific that it is dominating our model, I personally think the specificity of the genre helps us narrow our recommendations down to suggest more accurate songs.
+As we can see above, the aggregate difference between our recommended songs and our playlist average is 14, which is driven mainly by the genre data. This metric is only useful when compared to other aggregate differences, so I will analyze when I review another playlist. While it can be argued that our genre data is so specific that it is dominating our model, I personally think the specificity of the genre helps us narrow our recommendations down to suggest more accurate songs.
 
-Looking at our visualization, for the most part it appears most of the features are comparable, except for time signature, acousticness, liveness, and key. As a musician, I would argue that key and time signature does not matter too much in terms my enjoyment for music, so at first glance, I would not say that our recommendation is that far off.
+Looking at our visualization, for the most part it appears that our features for our recommendations are comparable to the playlist, with Tempo driving the main difference.
 
 Now for the sound test. I will document my subjective findings below:
 Some Nights, Radioactive, and Somebody That I Used to Know were all hits around 2013, and I personally have listened to these songs already. My description of Radioactive is an arena rock, bass thumping anthem that brings a high level of intensity. Some Nights and Somebody That I Used to Know are more chill and have a very nostaglic sound to them.
 
-For our recommendations, we have 3 songs by Imagine Dragons, 1 song by Panic at the Disco and our top song was Amber Run. I already know all of the songs except for the one made by Amber Run, and I would say that it is reasonable that these songs would be suggested, seeing the selection of songs on the playlist. I had to listen to the Amber Run song, and it definitely is a slower song that is lesser known to me than the others. It is definitely more acoustic and I wouldn't necessarily classify it as modern rock.
+For our recommendations, What Goes Around..., Bang Bang You're Dead, Dirty Little Secret and Mess Around are all alternative/rock sounding tracks, whereas Piledriver Waltz is definitely more on the chill side.
 
-Overall, I would deem that these 5 recommended songs pass the reasonableness test.
+Overall, based on our genre analysis and feature comparison, I would deem that these 5 recommended songs pass the reasonableness test.
 
 
 ### Reasonableness Test: 765
@@ -129,14 +117,14 @@ Here are 10 tracks that might fit this playlist:
 
 ![Image8](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/PlaylistGenreBreakdown765.png)
 
-As we can see above, the sample variance between our recommended song and our playlist average is very low, driven mainly by the genre data.
+As we can see above, the aggregate difference between our recommended songs and our playlist average is 6, which is driven mainly by the genre data. Most of our songs here are Disney/Soundtrack, so there seems to be little variation here. This aggregate difference is better than our first playlist, although it seems our features may be offsetting some of that difference.
 
-Looking at our visualization, for the most part it appears most of the features are comparable, except for the instrumentalness and energy. Seeing that the general theme of this playlist seems to be soundtrack for childrens movies, again, I believe that genre is the most important driver of the recommender here. Our most common genre, disney, seems a little off, but that can be explained because not all childrens movies are necessarily Disney movies.
+Looking at our visualization, for the most part it appears all of the features are comparable, with teempo, energy, popularity, loudness and danceability having the largest difference. Seeing that the general theme of this playlist seems to be soundtrack for childrens movies, I believe that genre is the most important driver of the recommender here, and it seems like our genre hit the mark.
 
 Now for the sound test. I will document my subjective findings below:
 As we can see from our selection of songs, they all seem to be Disney songs from Moana and Tangled. I would expect that our recommendation system would suggest other kids songs accross childrens movies. After pulling more songs from the unwrapped track data, I can confirm that there are some songs that are not Disney.
 
-For our recommendations, all 10 songs appear to be soundtrack songs, which is great, and they are all mainly from beloved kids movies. Because it seems like kids movie is the main category for this playlist, I will not review the other audio features.
+For our recommendations, all 10 songs appear to be soundtrack songs, which is great, and they are all mainly from beloved kids movies. Because it seems like kids movies is the main category for this playlist, I will deem this recommendation adequate.
 
 Overall, I would deem that these 10 recommended songs pass the reasonableness test.
 
@@ -155,16 +143,16 @@ Here are 5 tracks that might fit this playlist:
 ![Image12](https://raw.githubusercontent.com/justingrisanti/dsc-capstone-project/main/Visualizations/PlaylistGenreBreakdown160101.png)
 
 
-As we can see above, the sample variance between our recommended song and our playlist average is very low, driven mainly by the genre data.
+As we can see above, the aggregate difference between our recommendations and our playlist data is pretty large, at 44. I believe this is driven by our genre data, as it is very evenly spread our across multiple genres
 
-According to our visualization, our top song features appear to be a little more variable, with most feautres having a large distance. I think this once again proves that our specific genre data is the driver for our model.
+According to our feature visualization, our differences are very minimal compared to the other playlists. The largest differences are Speechiness, Acousticness and Energy.
 
 Now for the sound test. I will document my subjective findings below:
 From our playlist, I already recognize M83, the Black Keys and Vampire Weekend. Outro by M83 is very spacy and slow, whereas Howlin' For You is more uptempo and rock themed. Oxford Comma is also uptempo and kind of spaced out, but overall sounds chill. Not Just a Girl is slower paced, but also sounds like alt-rock overall. For our recommendations, I would expect chiller alt-rock that is slower in pace and has mostly fleshed out instrumentals.
 
-For our recommendations, I recognize none of the songs. To Build a Home is definitely a very slow song, and I would argue it sounds more like pop than alt-rock, but if our main genre for our playlist is "Downtempo," I would say it fits. Welcome Home, Son by Radical Face sounds like chill folk-rock, comparable to the Lumineers. Based on the type of playlist, I think this is a decent recommendation. King of Spain also sounds like folk, similar to Welcome Home, Son. The Lakes and Gold give me a similar feeling to To Build a Home, they are very slow and sound more like chill pop.
+For our recommendations, I recognize none of the songs. Caves, Coast to Coast and Diversion are very Indie sounding, somewhat Alternative. The two songs by Shlohmo are dance-like, and sound more electronic. They are also instrumentals. Outro by M83 fits a similar vibe to these songs.
 
-This playlist seems like there is more variety between the genres, and as such, my recommendations also seem varied. The thing in common does appear to be the style of songs being acoustic and instrumental and downtempo overall. I would say that these recommendations are adequate.
+This playlist seems like there is more variety between the genres, and as such, my recommendations also seem varied. However, due to the feature difference being relatively small, and due to the genres fitting the broad scope of the playlist, I deem these recommendations sufficient.
 
 
 ## Step 5:  Results
